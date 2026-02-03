@@ -68,8 +68,6 @@ def añadir_evento(calendar, max_dias, patron, clst, Evento):
                 break
         if duplicado: 
             continue
-        elif not duplicado:
-            break
                     
         descripcion = str(input(f"{c}\nSi quieres salir pulsa" f"{w}'Enter'{r}" f"\n{c}Descripción: {r}")).strip() # Indagamos la descripción del evento.
         if not descripcion: # Comprobamos si el usuario a ingresado 'Enter'.
