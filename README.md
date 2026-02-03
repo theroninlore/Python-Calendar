@@ -6,46 +6,41 @@
 
 ```yml
 
-  ░██████╗░░█████╗░██╗░░░░░███████╗███╗░░██╗██████╗░░█████╗░██████╗░██╗░█████╗░
-  ██╔════╝░██╔══██╗██║░░░░░██╔════╝████╗░██║██╔══██╗██╔══██╗██╔══██╗██║██╔══██╗
-  ██║░░░░░░███████║██║░░░░░█████╗░░██╔██╗██║██║░░██║███████║██████╔╝██║██║░░██║
-  ██║░░░░░░██╔══██║██║░░░░░██╔══╝░░██║╚████║██║░░██║██╔══██║██╔══██╗██║██║░░██║
-  ╚██████╗░██║░░██║███████╗███████╗██║░╚███║██████╔╝██║░░██║██║░░██║██║╚█████╔╝
-  ░╚═════╝░╚═╝░░╚═╝╚══════╝╚══════╝╚═╝░░╚══╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░╚════╝░
+  ░██████╗░░█████╗░██╗░░░░░███████╗███╗░░██╗██████╗░░█████╗░██████╗░
+  ██╔════╝░██╔══██╗██║░░░░░██╔════╝████╗░██║██╔══██╗██╔══██╗██╔══██╗
+  ██║░░░░░░███████║██║░░░░░█████╗░░██╔██╗██║██║░░██║███████║██████╔╝
+  ██║░░░░░░██╔══██║██║░░░░░██╔══╝░░██║╚████║██║░░██║██╔══██║██╔══██╗
+  ╚██████╗░██║░░██║███████╗███████╗██║░╚███║██████╔╝██║░░██║██║░░██║
+  ░╚═════╝░╚═╝░░╚═╝╚══════╝╚══════╝╚═╝░░╚══╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝
 ```
 
 
-Este proyecto es un sistema de gestión de eventos por terminal que contiene funciones como añadir evento, eliminar evento, modificar evento, consultar calendario y buscar evento. Para conseguir alcanzar mis objetivos del proyecto he tenido que usar diccionarios, listas, bucles, excepciones... Una de los mayores retos ha sido la **Programación Orientada a Objetos**.
+This project is a terminal-based event management system featuring functions such as adding, deleting, modifying, viewing the calendar, and searching for events. To achieve my project goals, I utilized dictionaries, lists, loops, exceptions, and more. One of the greatest challenges was **Object-Oriented Programming (OOP)**.
 
->[!NOTE]
-> Lo que ocupa casi todo el código son todas las excepciones y validaciones que hago a las entradas para poder evitar entradas inesperadas por parte del usuario.
+> [!NOTE] 
+> Most of the code consists of exceptions and input validations implemented to prevent unexpected user behavior and errors.
 
-###  **Conocimientos adquiridos**
+### Acquired Knowledge
+In this project, I learned how to work with dictionaries and objects. I also learned how to relate different data types and handle exceptions. Since this is my first project working with dictionaries and objects, the code is extensively commented for clarity.
 
-En este proyecto he aprendido a como trabajar con **diccionarios y objetos**. También he aprendido a como realcionar **tipos de datos** y trabajar con **excepciones**.
-Es mi primer proyecto en el que trabajo con diccionarios y objetos,  a esto se debe que el código este tan comentado.
+### Installation
 
----
+**Clone the repository**
+```Bash
+git clone https://github.com/theroninlore/Python-Calendar.git
+```
 
-### **Instalación**
+**Install dependencies**
+```Bash
+pip install colorama
+```
 
-1. **Clona el repositorio**
-  ```bash
-   git clone [https://github.com/theroninlore/Pytthon-Calendar.git](https://github.com/theroninlore/Python-Calendar.git)
-  ```
-2.  Instala las dependencias:
-  ```bash
-   pip install colorama
-  ```
+### Features
 
----
+✅ **Add Events**: Day validation according to the month and leap years.
 
-###  **Funcionalidades**
+🔍 **Smart Search**: Find events by name matching throughout the entire year.
 
-✅ **Añadir Eventos**: Validación de días según el mes y año bisiesto.
+📝 **Flexible Modification**: Change the name, time, or description using class methods.
 
-🔍 **Buscador Inteligente**: Encuentra eventos por coincidencia de nombre en todo el año.
-
-📝 **Modificación Flexible**: Cambia nombre, hora o descripción usando métodos de clase.
-
-💾 **Persistencia: Los datos** se guardan en calendario.json al salir.
+💾 **Persistence**: Data is automatically saved to calendario.json upon exiting.
