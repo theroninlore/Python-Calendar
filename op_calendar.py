@@ -234,11 +234,10 @@ def buscar_evento(calendar):
                     encontrado = True # Si el evento ha sido encontrado la variable 'encontrado' se establece en 'True'.
                     break
             if encontrado: # Si encontrado es 'True' que salga del bucle.
-                break
+                return(None)
         if not encontrado: # Si encontrado es 'False' que imprima que el evento no se ha encontrado y salga del bucle.
             print(f"\n{red}El evento '{nombre_buscar}' no ha sido encontrado.{r}")
-            break
-    return(None)
+            return(None)
 
 
 
